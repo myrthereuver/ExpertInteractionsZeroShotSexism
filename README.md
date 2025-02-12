@@ -11,7 +11,7 @@ contact person: myrthe[dot]reuver[at]gmail[dotcom]
 
 
 --------
-Our folders contain the software, each part of our pipeline: 
+Our folders represent the different parts of the pipeline, and in each is a software, data, and results subfolder with the following content:
 
 ## Folder PartI_Survey
 **Software:** 
@@ -39,22 +39,27 @@ An anonymized version of the LLM-expert interactions is called "xxxx.csv"
 (2) A Python notebook used to analyze this data.
 
 **Data:** 
-An anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix, called "xxxx.pkl"
+An anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix: xxxx.pkl
 
 ## Folder PartVI_Modelling
 **Software:** 
 Requires the definition dictionary from Part III. 
 
 #### GPT: 
-Running predictions:
-Postprocessing of results + evaluation:
+Running predictions: xxx.ipynb
+
+Postprocessing of results + evaluation: xxx.ipynb
 
 #### LLaMa:
-Running predictions:
-Postprocessing of results + evaluation:
+Running predictions: xxx.ipynb
+
+Postprocessing of results + evaluation: xxx.ipynb
 
 **Results:**
+
 A dictionary of predictions: xxx.pkl
+
 A dictionary of the metrics of the classification results: xxxx.pkl
+
 A notebook presenting in its output the modelling results over each dataset, by each expert: 
 xxxx.ipynb
