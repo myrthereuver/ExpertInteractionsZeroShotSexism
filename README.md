@@ -16,7 +16,8 @@ Our folders represent the different parts of the pipeline, and in each is a soft
 ## Folder PartI_Survey
 **Software:** 
 
-(1) Qualtrics templates for the survey are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
+(1) Qualtrics templates for the survey AND interactive experiments are stored in the folder "qualtrics". 
+This is provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey flow for reimplementation in other platforms.
 
 (2) Python notebook xxxx.ipynb used to analyze the data, using the following package versioning:
 
@@ -25,8 +26,8 @@ An anonymized version of the survey results is called "xxxx.csv".
 
 ## Folder PartII_Interactions
 **Software:** 
-(1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 
+(1) Interactions with LLM: see Qualtrics files in Folder part I
 (2) Python notebook xxxx.ipynb used to analyze this data.
 
 **Data:** 
@@ -35,7 +36,7 @@ An anonymized version of the survey results is called "xxxx.csv".
 ## Folder Part III_Definitions
 **Software:** 
 
-(1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
+(1) Interactions with LLM: see Qualtrics files in Folder part I
 
 (2) xxxx.ipynb is a Python notebook used to analyze this data.
 
