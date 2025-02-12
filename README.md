@@ -18,7 +18,7 @@ Our folders represent the different parts of the pipeline, and in each is a soft
 
 (1) Qualtrics templates for the survey are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 
-(2) A Python notebook used to analyze the data, using the following package versioning:
+(2) Python notebook xxxx.ipynb used to analyze the data, using the following package versioning:
 
 **Data:** 
 An anonymized version of the survey results is called "xxxx.csv".
@@ -27,39 +27,42 @@ An anonymized version of the survey results is called "xxxx.csv".
 **Software:** 
 (1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 
-(2) A Python notebook used to analyze this data.
+(2) Python notebook xxxx.ipynb used to analyze this data.
 
 **Data:** 
-An anonymized version of the LLM-expert interactions is called "xxxx.csv"
+"xxxx.csv" is an anonymized version of the LLM-expert interactions is called 
 
 ## Folder Part III_Definitions
 **Software:** 
+
 (1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 
-(2) A Python notebook used to analyze this data.
+(2) xxxx.ipynb is a Python notebook used to analyze this data.
 
 **Data:** 
-An anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix: xxxx.pkl
+xxxx.pkl is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix
 
 ## Folder PartVI_Modelling
 **Software:** 
 Requires the definition dictionary from Part III. 
 
-#### GPT: 
-Running predictions: xxx.ipynb
+Requirements:
+[software packages]
 
-Postprocessing of results + evaluation: xxx.ipynb
+#### GPT: 
+(1) Python notebook xxxx.ipynb for running predictions
+
+(2) Python notebook xxxx.ipynb for post processing of results + evaluation
 
 #### LLaMa:
-Running predictions: xxx.ipynb
+(1) Python notebook xxxx.ipynb for running predictions
 
-Postprocessing of results + evaluation: xxx.ipynb
+(2) Python notebook xxxx.ipynb for post processing of results + evaluation
 
 **Results:**
 
-A dictionary of predictions: xxx.pkl
+(1) Dictionary xxxx.pkl dictionary of predictions
 
-A dictionary of the metrics of the classification results: xxxx.pkl
+(2) Dictionary xxxx.pkl of the metrics (F1, accuracy, classification report) of the classification results per dataset and participant
 
-A notebook presenting in its output the modelling results over each dataset, by each expert: 
-xxxx.ipynb
+(3) Python notebook xxxx.ipynb presenting in its output the modelling results over each dataset, by each expert
