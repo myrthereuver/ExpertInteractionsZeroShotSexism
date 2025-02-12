@@ -13,7 +13,7 @@ contact person: myrthe[dot]reuver[at]gmail[dotcom]
 --------
 Our folders contain the software, each part of our pipeline: 
 
-## Part I: Survey
+## Folder PartI_Survey
 **Software:** 
 (1) Qualtrics templates for the survey are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 (2) A Python notebook used to analyze the data, using the following package versioning:
@@ -21,7 +21,7 @@ Our folders contain the software, each part of our pipeline:
 **Data:** 
 An anonymized version of the survey results is called "xxxx.csv".
 
-## Part II: Interactive Experiments
+## Folder PartII_Interactions
 **Software:** 
 (1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 (2) A Python notebook used to analyze this data.
@@ -29,7 +29,7 @@ An anonymized version of the survey results is called "xxxx.csv".
 **Data:** 
 An anonymized version of the LLM-expert interactions is called "xxxx.csv"
 
-## Part III: Definition Experiments
+## Folder Part III_Definitions
 **Software:** 
 (1) Qualtrics templates for the interactive experiments with the GPT API are stored in the folder "qualtrics". These contain both .qsf files (importable in Qualtrics) and PDF files showing the overall survey flow for reimplementation in other platforms.
 (2) A Python notebook used to analyze this data.
@@ -37,20 +37,19 @@ An anonymized version of the LLM-expert interactions is called "xxxx.csv"
 **Data:** 
 An anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix, called "xxxx.pkl"
 
-## Part VI: Modelling
+## Folder PartVI_Modelling
 **Software:** 
 Requires the definition dictionary from Part III. 
 
-### GPT: 
+#### GPT: 
 Running predictions:
 Postprocessing of results + evaluation:
 
-### LLaMa:
+#### LLaMa:
 Running predictions:
 Postprocessing of results + evaluation:
-
-**Data:** 
 
 **Results:**
+A dictionary of mo
 We provide a dictionary of the metrics of the classification results. 
 We also present a notebook presenting in its output the modelling results over each dataset, by each expert.
