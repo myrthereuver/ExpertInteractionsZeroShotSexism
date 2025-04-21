@@ -10,8 +10,7 @@ This repository contains experimental software and is published for the sole pur
 contact person: myrthe[dot]reuver[at]gmail[dotcom]
 
 
-![Figure 1 of the paper, displaying the pipeline](https://github.com/myrthereuver/ExpertInteractionsZeroShotSexism
-/blob/main/Fig1_ModelSexism.png?raw=true)
+![Figure 1 of the paper, displaying the pipeline](https://github.com/myrthereuver/ExpertInteractionsZeroShotSexism/blob/main/Fig1_ModelSexism.png?raw=true)
 --------
 
 ## Folder PartI_Survey
