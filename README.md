@@ -17,9 +17,13 @@ Our folders represent the different parts of the pipeline, and in each is a soft
 **Software:** 
 
 (1) Qualtrics templates for the survey AND interactive experiments are stored in the folder "qualtrics". 
-This is provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey flow for reimplementation in other platforms.
+These are provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey and experimental flow for reimplementation in other platforms. 
 
-(2) Python notebook xxxx.ipynb used to analyze the data, using the following package versioning:
+Implementation details: The OpenAI API is called in an embedded Web Service block, the arguments to it are given in JSON format and by reading user input and earlier in/output pairs, after which the loop is obtained by having different Web Service blocks connect to the user is an if/then fashion: if the user indicates not wanting to continue prompting, the user is not refer to a new block.
+
+(2) Python notebook xxxx.ipynb used to analyze the data.
+
+Implementation details: using the package versioning in 
 
 **Data:** 
 An anonymized version of the survey results is called "xxxx.csv".
@@ -41,14 +45,25 @@ An anonymized version of the survey results is called "xxxx.csv".
 (2) xxxx.ipynb is a Python notebook used to analyze this data.
 
 **Data:** 
-xxxx.pkl is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix
+xxxx.pkl is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix.
+
 
 ## Folder PartVI_Modelling
 **Software:** 
 Requires the definition dictionary from Part III. 
 
-Requirements:
-[software packages]
+LINKS TO EXTERNAL DATASETS
+
+ID https://search.gesis.org/research_data/SDN-10.7802-2251
+
+OOD1 https://github.com/fhstp/EXIST2022/tree/main/data/EXIST2022_orig
+
+OOD2 https://github.com/ellamguest/online-misogyny-eacl2021/tree/main/data
+
+OOD3 https://github.com/rewire-online/edos
+
+Hatecheck (HC) https://github.com/paul-rottger/hatecheck-data
+
 
 #### GPT: 
 (1) Python notebook xxxx.ipynb for running predictions
