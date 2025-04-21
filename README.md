@@ -10,23 +10,23 @@ This repository contains experimental software and is published for the sole pur
 contact person: myrthe[dot]reuver[at]gmail[dotcom]
 
 
---------
-Our folders represent the different parts of the pipeline, and in each is a software, data, and results subfolder with the following content:
+--------:
 
 ## Folder PartI_Survey
-**Software:** 
 
-(1) Qualtrics templates for the survey AND interactive experiments are stored in the folder "qualtrics". 
+**Qualtrics**
+
+Qualtrics templates for the survey AND interactive experiments are stored in the folder "qualtrics". 
 These are provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey and experimental flow for reimplementation in other platforms. 
 
 Implementation details: The OpenAI API is called in an embedded Web Service block, the arguments to it are given in JSON format and by reading user input and earlier in/output pairs, after which the loop is obtained by having different Web Service blocks connect to the user is an if/then fashion: if the user indicates not wanting to continue prompting, the user is not refer to a new block.
 
-(2) Python notebook xxxx.ipynb used to analyze the data.
-
-Implementation details: using the package versioning in 
-
 **Data:** 
-An anonymized version of the survey results is called "xxxx.csv".
+An anonymized version of the survey results is provided as "xxxx.csv".
+
+Python notebook xxxx.ipynb used to analyze the data.
+
+Implementation details: using the package versioning in the requirements.txt.
 
 ## Folder PartII_Interactions
 **Software:** 
@@ -50,23 +50,26 @@ xxxx.pkl is anonymized version of the definition versions, corresponding to the 
 
 ## Folder PartVI_Modelling
 **Software:** 
-Requires the definition dictionary from Part III. 
 
-LINKS TO EXTERNAL DATASETS
+Input: Requires the definition dictionary that is the output from Part III, and the sexism detection benchmark datasets outlined below. 
 
-ID https://search.gesis.org/research_data/SDN-10.7802-2251
 
-OOD1 https://github.com/fhstp/EXIST2022/tree/main/data/EXIST2022_orig
+LINKS TO EXTERNAL DATASETS:
 
-OOD2 https://github.com/ellamguest/online-misogyny-eacl2021/tree/main/data
+'Call me sexist but' Dataset (CMSB): https://search.gesis.org/research_data/SDN-10.7802-2251
 
-OOD3 https://github.com/rewire-online/edos
+EXIST: https://github.com/fhstp/EXIST2022/tree/main/data/EXIST2022_orig
 
-Hatecheck (HC) https://github.com/paul-rottger/hatecheck-data
+GUEST ET. AL.: https://github.com/ellamguest/online-misogyny-eacl2021/tree/main/data
+
+EDOS: https://github.com/rewire-online/edos
+
+Hatecheck (HC): https://github.com/paul-rottger/hatecheck-data
 
 
 #### GPT: 
-(1) Python notebook xxxx.ipynb for running predictions
+(1) Code for modelling is in the notebook "ZeroShot_Classification_with_Definitions.ipynb"
+This folder also contains a requirements.txt, but the most important versioning is openai==1.51.2
 
 (2) Python notebook xxxx.ipynb for post processing of results + evaluation
 
