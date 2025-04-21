@@ -21,7 +21,8 @@ These are provided both in .qsf file (importable in Qualtrics) and a PDF file sh
 
 Implementation details: The OpenAI API is called in an embedded Web Service block, the arguments to it are given in JSON format and by reading user input and earlier in/output pairs, after which the loop is obtained by having different Web Service blocks connect to the user is an if/then fashion: if the user indicates not wanting to continue prompting, the user is not refer to a new block.
 
-**Data:** 
+**Data** 
+
 An anonymized version of the survey results is provided as "xxxx.csv".
 
 Python notebook xxxx.ipynb used to analyze the data.
