@@ -33,7 +33,7 @@ Python notebook `Show_heatmaps.ipynb` used to analyze and visualize the Likert s
 ## Folder PartII_Interactions
 See below for the artifacts in the specific subfolders.
 
-For the implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
+For the implementation of the interactions with LLM: see Qualtrics files in the folder of part I. 
 
 **Data:** 
 
@@ -41,7 +41,7 @@ For the implementation of the interactions with LLM: see Qualtrics files in Fold
 
 **Code:** 
 
-Python notebook `xxxx.ipynb` used to analyze the interaction data.
+Python notebook `xxxx.ipynb` used to analyze this interaction data.
 
 
 ## Folder Part III_Definitions
@@ -75,22 +75,32 @@ EDOS: https://github.com/rewire-online/edos
 Hatecheck (HC): https://github.com/paul-rottger/hatecheck-data
 
 
-#### GPT: 
+#### Zero Shot Classification and Data Processing
+
+###### GPT
 Code for GPT zero shot classification is in the notebook `ZeroShot_Classification_with_Definitions.ipynb`
 This folder also contains a `requirements.txt` with requirements, but the most important versioning is `openai==1.51.2`
 
-Python notebook `xxxx.ipynb` for post processing of results + evaluation
+Python notebook `Raw_to_metrics.ipynb` for post processing of results + getting to evaluation metrics. 
 
-#### LLaMa:
-Python notebook `xxxx.ipynb` for running predictions
+Python notebook `GPT_Plots.ipynb` for plotting the results: requires as input the cleaned dataframes with metrics (F1 etc) as stored under `PartVI_Modelling/Results`.
 
-Python notebook `xxxx.ipynb` for post processing of results + evaluation
+###### LLaMa
+
+Python notebook `LLaMa_ZeroShot_with_Definitions.ipynb` for running predictions.
+
+Python notebook `Plot_llama.ipynb` for post processing + evaluation + plotting results
 
 **Results:**
 
-Dictionary `xxxx.pkl` of predictions of 
-GPT and Dictionary `xxxx.pkl` of predictions of LLaMa
+Raw results: Dictionaries `results_GPT.pkl` and `results_GPT07.pkl` of predictions of 
+GPT's first and second run, and dictionary `results_llama.pkl` of predictions of LLaMa. 
+NOTE: These have three "results" columns, one for each of the three definition types: "results" is for the participant definition, "results_GPT10" for the co-created definition, and "Results_GPT1" for the GPT definition. 
 
-Dictionary `xxxx.pkl` for LLaMa and Dictionary `xxxx.pkl`  of the metrics (F1, accuracy, classification report) of the classification results per dataset and participant.
+Performance dataframes (with F1, accuracy, etc. per participant for each definition and each dataset): Dictionary  `metrics_df_llama.pkl` for LLaMa and `metrics_df_gpt07.pkl` and `metrics_df_gpt_cleaned_data.pkl` for GPT runs.
 
-Python notebook `xxxx.ipynb` presenting in its output the modelling results over each dataset, by each expert.
+The raw results can be used to obtain the performance dataframes with the notebook `Code/Raw_to_metrics.ipynb`.
+
+The performance dataframes are the input for the plotting script `Code/GPT_Plots.ipynb`.
+
+
