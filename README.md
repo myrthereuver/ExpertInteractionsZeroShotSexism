@@ -31,33 +31,35 @@ Python notebook `xxxx.ipynb` used to analyze the data.
 Implementation details: using the package versioning in the `requirements.txt`.
 
 ## Folder PartII_Interactions
+See below for the artifacts in the specific subfolders. 
+For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
 
 **Software:** 
 
-For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
-(2) Python notebook xxxx.ipynb used to analyze this data.
+Python notebook `xxxx.ipynb` used to analyze the interaction data.
 
 **Data:** 
-"xxxx.csv" is an anonymized version of the LLM-expert interactions is called 
+
+`Knowledge_interaction_ds.csv` is an anonymized csv file with the LLM-expert knowledge interactions.
 
 ## Folder Part III_Definitions
 **Software:** 
 
-(1) Interactions with LLM: see Qualtrics files in Folder part I
+For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
 
-(2) xxxx.ipynb is a Python notebook used to analyze this data.
+`xxxx.ipynb` is a Python notebook used to analyze this data.
 
 **Data:** 
-xxxx.pkl is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix.
+`dict_of_defs.pkl` is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix.
+`Definitions_Interaction_ds.csv` contains anonymized data on the definition interactions. 
 
 
 ## Folder PartVI_Modelling
 **Software:** 
 
-Input: Requires the definition dictionary that is the output from Part III, and the sexism detection benchmark datasets outlined below. 
+Input: Requires `dict_of_defs.pkl` (dictionary of definitions) that is the output from Part III, and the sexism detection benchmark datasets outlined below. 
 
-
-LINKS TO EXTERNAL DATASETS:
+EXTERNAL DATASETS:
 
 'Call me sexist but' Dataset (CMSB): https://search.gesis.org/research_data/SDN-10.7802-2251
 
@@ -71,10 +73,10 @@ Hatecheck (HC): https://github.com/paul-rottger/hatecheck-data
 
 
 #### GPT: 
-(1) Code for modelling is in the notebook "ZeroShot_Classification_with_Definitions.ipynb"
-This folder also contains a requirements.txt, but the most important versioning is openai==1.51.2
+Code for GPT zero shot classification is in the notebook `ZeroShot_Classification_with_Definitions.ipynb`
+This folder also contains a `requirements.txt` with requirements, but the most important versioning is `openai==1.51.2`
 
-(2) Python notebook xxxx.ipynb for post processing of results + evaluation
+Python notebook xxxx.ipynb for post processing of results + evaluation
 
 #### LLaMa:
 (1) Python notebook xxxx.ipynb for running predictions
