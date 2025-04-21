@@ -14,26 +14,27 @@ contact person: myrthe[dot]reuver[at]gmail[dotcom]
 --------
 
 ## Folder PartI_Survey
+See below for the artifacts in the specific subfolders. 
 
 **Qualtrics**
 
-Qualtrics templates for the survey AND interactive experiments are stored in the folder "qualtrics". 
-These are provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey and experimental flow for reimplementation in other platforms. 
+Qualtrics templates for the survey AND interactive experiments are stored in the folder `qualtrics`. These are provided both in .qsf file (importable in Qualtrics) and a PDF file showing the overall survey and experimental flow for reimplementation in other platforms. 
 
 Implementation details: The OpenAI API is called in an embedded Web Service block, the arguments to it are given in JSON format and by reading user input and earlier in/output pairs, after which the loop is obtained by having different Web Service blocks connect to the user is an if/then fashion: if the user indicates not wanting to continue prompting, the user is not refer to a new block.
 
 **Data** 
 
-An anonymized version of the survey results is provided as "xxxx.csv".
+An anonymized version of the survey results is provided in `Data/Questionnaire_ds.csv`.
 
-Python notebook xxxx.ipynb used to analyze the data.
+Python notebook `xxxx.ipynb` used to analyze the data.
 
-Implementation details: using the package versioning in the requirements.txt.
+Implementation details: using the package versioning in the `requirements.txt`.
 
 ## Folder PartII_Interactions
+
 **Software:** 
 
-(1) Interactions with LLM: see Qualtrics files in Folder part I
+For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
 (2) Python notebook xxxx.ipynb used to analyze this data.
 
 **Data:** 
