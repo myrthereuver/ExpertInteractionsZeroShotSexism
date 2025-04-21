@@ -26,36 +26,39 @@ Implementation details: The OpenAI API is called in an embedded Web Service bloc
 
 An anonymized version of the survey results is provided in `Data/Questionnaire_ds.csv`.
 
-Python notebook `xxxx.ipynb` used to analyze the data.
+**Code**
 
-Implementation details: using the package versioning in the `requirements.txt`.
+Python notebook `Show_heatmaps.ipynb` used to analyze and visualize the Likert scale results.
 
 ## Folder PartII_Interactions
-See below for the artifacts in the specific subfolders. 
-For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
+See below for the artifacts in the specific subfolders.
 
-**Software:** 
-
-Python notebook `xxxx.ipynb` used to analyze the interaction data.
+For the implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
 
 **Data:** 
 
 `Knowledge_interaction_ds.csv` is an anonymized csv file with the LLM-expert knowledge interactions.
 
+**Code:** 
+
+Python notebook `xxxx.ipynb` used to analyze the interaction data.
+
+
 ## Folder Part III_Definitions
-**Software:** 
 
 For Qualtrics implementation of the interactions with LLM: see Qualtrics files in Folder Part I. 
-
-`xxxx.ipynb` is a Python notebook used to analyze this data.
 
 **Data:** 
 `dict_of_defs.pkl` is anonymized version of the definition versions, corresponding to the definition Table in the paper's appendix.
 `Definitions_Interaction_ds.csv` contains anonymized data on the definition interactions. 
 
+**Code:**
+
+`xxxx.ipynb` is a Python notebook used to analyze this data.
+
 
 ## Folder PartVI_Modelling
-**Software:** 
+**Code:** 
 
 Input: Requires `dict_of_defs.pkl` (dictionary of definitions) that is the output from Part III, and the sexism detection benchmark datasets outlined below. 
 
@@ -76,17 +79,18 @@ Hatecheck (HC): https://github.com/paul-rottger/hatecheck-data
 Code for GPT zero shot classification is in the notebook `ZeroShot_Classification_with_Definitions.ipynb`
 This folder also contains a `requirements.txt` with requirements, but the most important versioning is `openai==1.51.2`
 
-Python notebook xxxx.ipynb for post processing of results + evaluation
+Python notebook `xxxx.ipynb` for post processing of results + evaluation
 
 #### LLaMa:
-(1) Python notebook xxxx.ipynb for running predictions
+Python notebook `xxxx.ipynb` for running predictions
 
-(2) Python notebook xxxx.ipynb for post processing of results + evaluation
+Python notebook `xxxx.ipynb` for post processing of results + evaluation
 
 **Results:**
 
-(1) Dictionary xxxx.pkl dictionary of predictions
+Dictionary `xxxx.pkl` of predictions of 
+GPT and Dictionary `xxxx.pkl` of predictions of LLaMa
 
-(2) Dictionary xxxx.pkl of the metrics (F1, accuracy, classification report) of the classification results per dataset and participant
+Dictionary `xxxx.pkl` for LLaMa and Dictionary `xxxx.pkl`  of the metrics (F1, accuracy, classification report) of the classification results per dataset and participant.
 
-(3) Python notebook xxxx.ipynb presenting in its output the modelling results over each dataset, by each expert
+Python notebook `xxxx.ipynb` presenting in its output the modelling results over each dataset, by each expert.
